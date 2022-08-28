@@ -1,5 +1,5 @@
 // combine reducers
-import { combineReducers } from 'redux'
+import { combineReducers } from '@reduxjs/toolkit'
 import repositoriesReducer from './repositoriesReducer'
 
 const reducers = combineReducers({

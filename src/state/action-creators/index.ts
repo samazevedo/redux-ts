@@ -2,6 +2,7 @@ import axios from 'axios'
 import { ActionType } from '../action_types'
 import { Action } from '../actions'
 import { Dispatch } from '@reduxjs/toolkit'
+// import { useAppDispatch } from '../../hooks/useAppDispatch'
 
 export const searchRepositories = (term: string) => {
     return async (dispatch: Dispatch<Action>) => {
@@ -18,7 +19,7 @@ export const searchRepositories = (term: string) => {
                     },
                 }
             )
-            const names = data.object.map((result: any) => {
+            const names = data.objects.map((result: any) => {
                 return result.package.name
             })
             dispatch({

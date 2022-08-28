@@ -7,3 +7,6 @@ const reducers = combineReducers({
 })
 
 export default reducers
+
+// type that describes the kind of info inside the store
+// export type RootState = ReturnType<typeof reducers>
